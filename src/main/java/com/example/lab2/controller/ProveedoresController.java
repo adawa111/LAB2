@@ -21,9 +21,10 @@ public class ProveedoresController {
     @GetMapping ("/listar")
     public String listarProveedores(){
         List<Proveedores> lis = proveedoresRepository.findAll();
-            for (Proveedores p : lis){
-                System.out.printf("id proveedores: "+ p.getrepo);
+            for (Proveedores pro : lis){
+                System.out.printf("id proveedores: "+ pro.toString());
             }
+            return "listaproveedores";
     }
 
 }

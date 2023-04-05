@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+  <title>Listado de Jugadores</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" th:href="@{/webjars/bootstrap/5.0.2/css/bootstrap.min.css}">
+  <style>
+    body {
+      background-color: #f1c40f;
+    }
+    .btn-center {
+      display: flex;
+      justify-content: center;
+      margin-top: 1rem;
+    }
+  </style>
+</head>
+<body>
+<div class="container mt-4">
+  <h1>Listado de Jugadores</h1>
+  <div class="btn-center">
+    <button type="button" class="btn btn-success me-2">Añadir Jugador</button>
+    <button type="button" class="btn btn-primary me-2">Editar Jugador</button>
+  </div>
+  <ul class="list-group mt-4">
+    <li class="list-group-item d-flex justify-content-between align-items-center">
+      <span th:text="${player.name}"></span>
+      <button type="button" class="btn btn-danger">Eliminar</button>
+    </li>
+  </ul>
+</div>
+
+<script th:src="@{/webjars/bootstrap/5.0.2/js/bootstrap.bundle.min.js}"></script>
+</body>
+</html>
+

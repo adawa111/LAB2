@@ -28,6 +28,13 @@ public class HomeController {
     public String listaProveedores (Model model){
         return "hola";
     }
+    
+    @RequestMapping(value = "/paginaInicio", method = RequestMethod.GET)
+    public String listaDistribuidoras (Model model){
+        List<Conciertos> lista= conciertosRepository.findAll(Sort.by("nombre"));
+        model.addAttribute("listaConciertos", lista);
+        return "paginaInicio";
+    }
 
 
 }

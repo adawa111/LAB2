@@ -1,5 +1,44 @@
-Insert into proveedores (idProveedores,Nombre,Telefono,Elemento) values (1,"Otto Kuns","980347768","embutidos");
+INSERT INTO `conciertosperu`.`proveedores` (`idProveedores`, `Nombre`, `Telefono`, `Elemento`) VALUES ('1', 'Otto Kuns', '980347768', 'embutidos');
+INSERT INTO `conciertosperu`.`proveedores` (`idProveedores`, `Nombre`, `Telefono`, `Elemento`) VALUES ('2', 'Funerario', '950092717', 'Cajones de sepulcro');
+INSERT INTO `conciertosperu`.`proveedores` (`idProveedores`, `Nombre`, `Telefono`, `Elemento`) VALUES ('3', 'Angie Burger', '997210426', 'Choripan');
+INSERT INTO `conciertosperu`.`proveedores` (`idProveedores`, `Nombre`, `Telefono`, `Elemento`) VALUES ('4', 'Jandro', '912817406', 'Gaseosa');
+INSERT INTO `conciertosperu`.`proveedores` (`idProveedores`, `Nombre`, `Telefono`, `Elemento`) VALUES ('5', 'Amazon', '963852741', 'Servicios de Streaming');
+INSERT INTO `conciertosperu`.`proveedores` (`idProveedores`, `Nombre`, `Telefono`, `Elemento`) VALUES ('6', 'Ubeer', '963741852', 'Transporte');
+INSERT INTO `conciertosperu`.`proveedores` (`idProveedores`, `Nombre`, `Telefono`, `Elemento`) VALUES ('7', 'Spotify', '987654321', 'Servicio de Aclimatación');
+INSERT INTO `conciertosperu`.`proveedores` (`idProveedores`, `Nombre`, `Telefono`, `Elemento`) VALUES ('8', 'Nestle', '963258741', 'Leche Condensada');
+INSERT INTO `conciertosperu`.`proveedores` (`idProveedores`, `Nombre`, `Telefono`, `Elemento`) VALUES ('9', 'Molitalia', '987456321', 'Galleta Frac');
+INSERT INTO `conciertosperu`.`proveedores` (`idProveedores`, `Nombre`, `Telefono`, `Elemento`) VALUES ('10', 'D\'Onofrio', '951753852', 'Helados');
 
-Insert into artistas (idArtistas,Nombre_Grupo,Fecha_creacion,Tipo_musica) values (1,"Grupo 5","1992-04-08","cumbia");
+INSERT INTO `conciertosperu`.`artistas` (`idArtistas`, `Nombre_Grupo`, `Fecha_creacion`, `Tipo_musica`) VALUES ('1', 'Grupo5', '2001-05-01', 'Cumbia');
+INSERT INTO `conciertosperu`.`artistas` (`idArtistas`, `Nombre_Grupo`, `Fecha_creacion`, `Tipo_musica`) VALUES ('2', 'Agua Marina', '2002-02-02', 'Cumbia');
+INSERT INTO `conciertosperu`.`artistas` (`idArtistas`, `Nombre_Grupo`, `Fecha_creacion`, `Tipo_musica`) VALUES ('3', 'Los Hermanos Yaipen', '2003-03-03', 'Cumbia');
+INSERT INTO `conciertosperu`.`artistas` (`idArtistas`, `Nombre_Grupo`, `Fecha_creacion`, `Tipo_musica`) VALUES ('4', 'Timpling Rock', '2004-04-04', 'Rock Alternativo');
+INSERT INTO `conciertosperu`.`artistas` (`idArtistas`, `Nombre_Grupo`, `Fecha_creacion`, `Tipo_musica`) VALUES ('5', 'Bring me the Horizon', '2005-05-05', 'Rock');
+INSERT INTO `conciertosperu`.`artistas` (`idArtistas`, `Nombre_Grupo`, `Fecha_creacion`, `Tipo_musica`) VALUES ('6', 'The Beatles ', '2006-06-06', 'Rock');
+INSERT INTO `conciertosperu`.`artistas` (`idArtistas`, `Nombre_Grupo`, `Fecha_creacion`, `Tipo_musica`) VALUES ('7', 'Romeo Santos', '2007-07-07', 'Bachata Moderna');
+INSERT INTO `conciertosperu`.`artistas` (`idArtistas`, `Nombre_Grupo`, `Fecha_creacion`, `Tipo_musica`) VALUES ('8', 'Aventura', '1993-05-08', 'Bachata');
+INSERT INTO `conciertosperu`.`artistas` (`idArtistas`, `Nombre_Grupo`, `Fecha_creacion`, `Tipo_musica`) VALUES ('9', 'Juan Luis Guerra', '2001-09-05', 'Bachata');
+INSERT INTO `conciertosperu`.`artistas` (`idArtistas`, `Nombre_Grupo`, `Fecha_creacion`, `Tipo_musica`) VALUES ('10', 'Shakira ', '2000-01-08', 'Pop');
 
-Insert into integrantes (idIntegrantes,Nombre,Edad,Anhios_exp,rol,artistas_idArtistas) values (2,"Elmer Yaipen","55","25","baterista",1);
+INSERT INTO `conciertosperu`.`integrantes` (`idIntegrantes`, `Nombre`, `Edad`, `Anhios_exp`, `rol`, `artistas_idArtistas`) VALUES ('1', 'Lucho Cuéllar', '50', '10', 'Vocalita', '1');
+INSERT INTO `conciertosperu`.`integrantes` (`idIntegrantes`, `Nombre`, `Edad`, `Anhios_exp`, `rol`, `artistas_idArtistas`) VALUES ('2', 'Elmer Yaipen', '50', '5', 'Viocalsta', '1');
+INSERT INTO `conciertosperu`.`integrantes` (`idIntegrantes`, `Nombre`, `Edad`, `Anhios_exp`, `rol`, `artistas_idArtistas`) VALUES ('3', 'Christian Yaipén ', '40', '5', 'Vocalista', '1');
+INSERT INTO `conciertosperu`.`integrantes` (`idIntegrantes`, `Nombre`, `Edad`, `Anhios_exp`, `rol`, `artistas_idArtistas`) VALUES ('4', 'José Quiroga', '60', '20', 'Bajo eléctrico', '2');
+INSERT INTO `conciertosperu`.`integrantes` (`idIntegrantes`, `Nombre`, `Edad`, `Anhios_exp`, `rol`, `artistas_idArtistas`) VALUES ('5', 'Moisés Bustamante', '60', '21', 'Vocalista', '2');
+INSERT INTO `conciertosperu`.`integrantes` (`idIntegrantes`, `Nombre`, `Edad`, `Anhios_exp`, `rol`, `artistas_idArtistas`) VALUES ('6', 'Jonathan Rojas', '50', '6', 'Vocalista', '3');
+INSERT INTO `conciertosperu`.`integrantes` (`idIntegrantes`, `Nombre`, `Edad`, `Anhios_exp`, `rol`, `artistas_idArtistas`) VALUES ('7', 'Ben Andre', '25', '5', 'Voz ', '4');
+INSERT INTO `conciertosperu`.`integrantes` (`idIntegrantes`, `Nombre`, `Edad`, `Anhios_exp`, `rol`, `artistas_idArtistas`) VALUES ('8 ', 'Dillon Salkovitz', '26', '6', 'Guitarra', '4');
+INSERT INTO `conciertosperu`.`integrantes` (`idIntegrantes`, `Nombre`, `Edad`, `Anhios_exp`, `rol`, `artistas_idArtistas`) VALUES ('9 ', 'Oliver Sykes', '36', '10', 'Voz', '5');
+INSERT INTO `conciertosperu`.`integrantes` (`idIntegrantes`, `Nombre`, `Edad`, `Anhios_exp`, `rol`, `artistas_idArtistas`) VALUES ('10', 'John Lenon', '0', '30', 'Voz', '6');
+INSERT INTO `conciertosperu`.`integrantes` (`idIntegrantes`, `Nombre`, `Edad`, `Anhios_exp`, `rol`, `artistas_idArtistas`) VALUES ('11 ', 'Romeo Santos', '41', '25', 'Voz', '7');
+
+INSERT INTO `conciertosperu`.`concierto` (`idConcierto`, `Fecha_evento`, `proveedores_idProveedores`, `artistas_idArtistas`) VALUES ('1', '2023-04-04', '1', '1');
+INSERT INTO `conciertosperu`.`concierto` (`idConcierto`, `Fecha_evento`, `proveedores_idProveedores`, `artistas_idArtistas`) VALUES ('2', '2023-05-05', '2', '2');
+INSERT INTO `conciertosperu`.`concierto` (`idConcierto`, `Fecha_evento`, `proveedores_idProveedores`, `artistas_idArtistas`) VALUES ('3', '2023-06-06', '3', '3');
+INSERT INTO `conciertosperu`.`concierto` (`idConcierto`, `Fecha_evento`, `proveedores_idProveedores`, `artistas_idArtistas`) VALUES ('4', '2023-07-07', '4', '4');
+INSERT INTO `conciertosperu`.`concierto` (`idConcierto`, `Fecha_evento`, `proveedores_idProveedores`, `artistas_idArtistas`) VALUES ('5', '2023-08-08', '5', '5');
+INSERT INTO `conciertosperu`.`concierto` (`idConcierto`, `Fecha_evento`, `proveedores_idProveedores`, `artistas_idArtistas`) VALUES ('6', '2023-09-09', '6', '6');
+INSERT INTO `conciertosperu`.`concierto` (`idConcierto`, `Fecha_evento`, `proveedores_idProveedores`, `artistas_idArtistas`) VALUES ('7', '2023-10-10', '7', '7');
+INSERT INTO `conciertosperu`.`concierto` (`idConcierto`, `Fecha_evento`, `proveedores_idProveedores`, `artistas_idArtistas`) VALUES ('8', '2023-11-11', '8', '8');
+INSERT INTO `conciertosperu`.`concierto` (`idConcierto`, `Fecha_evento`, `proveedores_idProveedores`, `artistas_idArtistas`) VALUES ('9', '2023-12-12', '9', '9');
+INSERT INTO `conciertosperu`.`concierto` (`idConcierto`, `Fecha_evento`, `proveedores_idProveedores`, `artistas_idArtistas`) VALUES ('10', '2024-01-01', '10', '10');

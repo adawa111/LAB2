@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
     <link rel="icon" th:href="@{/img/icon.png}" type="image/x-icon" />
-    <title>CRUD Distribuidoras</title>
+    <title>CRUD Artistas</title>
     <link rel="stylesheet" th:href="@{/css/bootstrap.min.css}">
     <link rel="stylesheet" th:href="@{/css/fontawesome-all.min.css}">
 </head>
@@ -15,29 +15,13 @@
     <div>
         <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #e3f2fd;">
             <a class="navbar-brand">
-                <img th:src="@{/img/icon.png}" width="30" height="30" class="d-inline-block align-top" alt="" loading="lazy">
-                TELECONCERT
+                Conciertos Peru
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-app" aria-controls="navbar-app" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse justify-content-end" id="navbar-app">
-                <!--<ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#/user/signIn">Ingresar</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#/user/signUp">Registrarse</a>
-                    </li>
-                </ul>-->
-                <ul class="navbar-nav">
-                    <li class="nav-item active">
-                        <a class="nav-link" th:href="@{/distribuidoras/lista}">Distribuidoras</a>
-                    </li>
-                    <li class="nav-item active">
-                        <a class="nav-link" th:href="@{/juegos/lista}"> Juegos</a>
-                    </li>
-                </ul>
+
             </div>
         </nav>
     </div>
@@ -45,13 +29,13 @@
 
     <div id="content">
         <main>
-            <!-- Contenido -->
+
             <div class="page-header text-center">
                 <h1>Lista de Artistas</h1>
             </div>
             <div class="container-fluid">
 
-                <a class="btn btn-primary mt-4 mb-4" th:href="@{/distribuidoras/nuevo}">Nuevo Proveedor</a>
+                <a class="btn btn-primary mt-4 mb-4" th:href="@{/artistas/nuevo}">Nuevo Artista</a>
 
                 <table class="table table-striped">
                     <thead>
@@ -65,14 +49,14 @@
                     </tr>
                     </thead>
                     <tbody>
-                    <tr th:each="artistas, info: ${listaDistrib}">
+                    <tr th:each="artistas, info: ${listaArtista}">
                         <td th:text="${info.index + 1}"></td>
                         <td th:text="${artistas.nombre}"></td>
                         <td th:text="${artistas.fundacion}"></td>
                         <td th:text="${artistas.sede}"></td>
 
-                        <td><a class="btn btn-primary" th:href="@{'/distribuidoras/editar?id='+${artistas.iddistribuidora}}">Editar</a></td>
-                        <td><a class="btn btn-danger" th:href="@{'/distribuidoras/borrar?id='+${artistas.iddistribuidora}}">Borrar</a></td>
+                        <td><a class="btn btn-primary" th:href="@{'/artistas/editar?id='+${artistas.idArtistas}}">Editar</a></td>
+                        <td><a class="btn btn-danger" th:href="@{'/artistas/borrar?id='+${artistas.idArtistas}}">Borrar</a></td>
 
                     </tr>
                     </tbody>
